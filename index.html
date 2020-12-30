@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Test task">
+	<meta name="author" content="Oleksandr Poviakalo">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>List messages</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<header class="header col-12">
+				<button class="header__refresh btn">
+					<svg class="icon sync-alt">
+						<use xlink:href="images/sprite.svg#sync-alt-solid"></use>
+					</svg>
+				</button>				
+				<div class="header__numberMessages header__info">Повідомлень - <span class="countMessages">0</span></div>
+				<div class="header__unreadMessages header__info">Непрочитаних - <span class="countUnreadMessages">0</span></div>		
+			</header>
+		</div>		
+		<div class="row">
+			<ul class="list col-12" id="list">								
+			</ul>			
+		</div>		
+	</div>
+
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>
